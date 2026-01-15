@@ -51,6 +51,7 @@ const Carousel: React.FC<CarouselProps> = ({
       <ul
         className="Carousel__list"
         style={{
+          width: `${images.length * ITEM_STEP}px`,
           transform: `translateX(-${ITEM_STEP * index}px)`,
           gap: GAP,
           transition: `${animationDuration}ms all`,
